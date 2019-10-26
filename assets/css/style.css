@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/bckimg.jpg);
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    content: " ";
+    display: block;
+    clear: both;
+    overflow: auto;
+}
+
+h1 {
+    background-color: darkgoldenrod;
+    color: white;
+    width: 30%;
+}
+
+.content {
+    background-color: yellow;
+    width: 60%;
+}
+
+.gems {
+    margin: 5px;
+    border: 3px solid black;
+    float: left;
+}
+
+.gems {
+    width: inherit;
+}
+
+img {
+    width: 150px;
+    height: 150px
+}
