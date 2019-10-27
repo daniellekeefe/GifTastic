@@ -8,40 +8,49 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>GifTastic</title>
 </head>
-
+<!--top title and search-->
 <body>
-    <div class="container">
-        <div class="row">
-<div class="search md-col-12">
-  <h1>Search Bands!</h1>
-  <input type="text" id="add-button" value="">
-  <button type="button" id="add">Add</button>
-  </div>
-</div>
-<div class="row">
-  <div class="btns col-md-12">
-  <div id="buttons">
-      <button data-topics="Dave Matthews Band" class="search-button">Dave Matthews Band</button>
-      <button data-topics="Stevie Nicks" class="search-button">Stevie Nicks</button>
-      <button data-topics="Tori Amos" class="search-button">Tori Amos</button>
-      <button data-topics="Florence and the Machine" class="search-button">Florence and the Machine</button>
-      <button data-topics="Mumford & Sons" class="search-button">Mumford & Sons</button>
-      <button data-topics="Prince" class="search-button">Prince</button>
-    </button>
-  </div>
-  </div>
-</div>
-<div class="row">
-  <div class="img col-md-12">
-    <div id="gifs-appear-here">
-    
+    <nav class=navbar navbar-expand-lg navbar-light bg-light>
+        <div class="nav col-lg-12">
+          <div class="name col-lg-6">
+            <h1>Search Bands!</h1>
+          </div>
+          <div class="input col-lg-6">
+              <input type="text" id="add-button" value="">
+              <button type="button" id="add">Add</button>
+          </div>
+        </div>
+        </div>
+      </nav>
+  <div class="container">
+<!--pre-existing buttons-->
+    <div class="row">
+      <div class="btns col-md-12">
+        <div id="buttons">
+          <button data-topics="Dave Matthews Band" class="search-button">Dave Matthews Band</button>
+          <button data-topics="Stevie Nicks" class="search-button">Stevie Nicks</button>
+          <button data-topics="Tori Amos" class="search-button">Tori Amos</button>
+          <button data-topics="Florence and the Machine" class="search-button">Florence and the Machine</button>
+          <button data-topics="Mumford & Sons" class="search-button">Mumford & Sons</button>
+          <button data-topics="Prince" class="search-button">Prince</button>
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+    <!--dynamic user added search buttons-->
+ 
+    <div class="row">
+      <div class="img col-md-12">
+        <div id="gifs-appear-here">
+        </div>
+      </div>
+    </div>
+
+        <!--Script to JS-->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 

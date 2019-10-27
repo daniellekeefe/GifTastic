@@ -17,29 +17,37 @@ body {
     clear: both;
     overflow: auto;
 }
-
+/*header*/
 h1 {
-    background-color: darkgoldenrod;
+    background-color: blue;
     color: white;
-    width: 30%;
+    font-style: oblique;
+    padding: 10px; 
+  
 }
-
-.content {
-    background-color: yellow;
-    width: 60%;
+/*input box*/
+.input{
+    float: right;
 }
-
-.gems {
-    margin: 5px;
-    border: 3px solid black;
-    float: left;
+/* all buttons styled colof*/
+button{
+    color: white;
+    background-color: blue;  
+    padding: 10px; 
 }
-
-.gems {
-    width: inherit;
+.buttons{
+    align-self: center; 
+    padding: 10px; 
 }
-
+/*Image size*/
 img {
-    width: 150px;
-    height: 150px
+    width: 300px;
+    height: 300px; 
+    padding: 10px; 
 }
+/*rating font details*/
+p{
+    color: white;
+    font-size: 20px;
+}
+

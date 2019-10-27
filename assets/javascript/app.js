@@ -3,8 +3,9 @@ $(document).ready(function () {
     var topics = $(this).attr("data-topics");
     //API search query
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      topics + "&api_key=Li4fJuAb969MxbQpL9hf9IvZCuZhbB1i";
-    //ajax GET info
+      topics + "&api_key=Li4fJuAb969MxbQpL9hf9IvZCuZhbB1i&limit=10";
+    //q=ryan+gosling&api_key=YOUR_API_KEY&limit=5
+      //ajax GET info
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -14,8 +15,6 @@ $(document).ready(function () {
         //Gifs returned 10
         for (var i = 0; i < 10; i++) {
           var gifDiv = $("<div>");
-
-
 
           var rating = results[i].rating;
           //Include rating of the Gif to be displated
@@ -40,7 +39,7 @@ $(document).ready(function () {
           $("#gifs-appear-here").prepend(gifDiv);
           $(".gif").on("click", function () {
 
-            // $(this) just means "the element with class 'gif' that was clicked"
+            // $(this) means "the element with class 'gif' that was clicked"
             var state = $(this).attr("data-state");
             // $(this).attr("data-state") will either be "still" or "animate"
             // IF it's still: we change it to animate
@@ -50,17 +49,28 @@ $(document).ready(function () {
               $(this).attr("src", newSrc);
               $(this).attr("data-state", "animate");
 
-              // OR it's animate already, so we change it to still
-            } else {
-              var newSrc = $(this).attr("data-still");
-              $(this).attr("src", newSrc);
-              $(this).attr("data-state", "still");
+              // OR it's animatedc already, so we change it to still
             }
-          }); // end of click handler
+            //else {
+            //  var newSrc = $(this).attr("data-still");
+            //   $(this).attr("src", newSrc);
+            //   $(this).attr("data-state", "still");
+            // }
+          }); // end of animation click handler
         }
       });
   });
   //Click functions!
+  //If blank do not allow a button to be made
+  $('#add').attr('disabled', true);
+  $('#add-button').keyup(function () {
+    if ($(this).val().length != 0)
+      $('#add').attr('disabled', false);
+    else
+      $('#add').attr('disabled', true);
+  })
+  //if details in the field you can add a button
+
   $('#add').on('click', function () {
     // Get value of input to create new button
     const newButtonValue = $('#add-button').val().trim()
