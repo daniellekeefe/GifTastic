@@ -26,7 +26,6 @@ $(document).ready(function () {
             "data-still": results[i].images.original_still.url,
             "data-animate": results[i].images.original.url,
             "data-state": "still",
-            "data-stats": "animate",
             "class": "gif"
           });
 
