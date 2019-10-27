@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 html,
 body {
     height: 100%;
@@ -17,37 +18,42 @@ body {
     clear: both;
     overflow: auto;
 }
+
 /*header*/
 h1 {
     background-color: blue;
     color: white;
     font-style: oblique;
-    padding: 10px; 
-  
+    padding: 10px;
+
 }
+
 /*input box*/
-.input{
+.input {
     float: right;
 }
+
 /* all buttons styled colof*/
-button{
+button {
     color: white;
-    background-color: blue;  
-    padding: 10px; 
+    background-color: blue;
+    padding: 10px;
 }
-.buttons{
-    align-self: center; 
-    padding: 10px; 
+
+.buttons {
+    align-self: center;
+    padding: 10px;
 }
+
 /*Image size*/
 img {
     width: 300px;
-    height: 300px; 
-    padding: 10px; 
+    height: 300px;
+    padding: 10px;
 }
+
 /*rating font details*/
-p{
+p {
     color: white;
     font-size: 20px;
 }
-
